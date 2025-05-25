@@ -59,18 +59,18 @@ jobs:
         id: check-axios-version
         run: |
           # Checks to perform
-            checks='{
-              "package_json": {
-                "name": "package.json",
-                "passed": true,
-                "message": ""
-              },
-              "package_lock_json": {
-                "name": "package-lock.json",
-                "passed": true,
-                "message": ""
-              }
-            }'
+          checks='{
+            "package_json": {
+              "name": "package.json",
+              "passed": true,
+              "message": ""
+            },
+            "package_lock_json": {
+              "name": "package-lock.json",
+              "passed": true,
+              "message": ""
+            }
+          }'
 
           # Check for minimist version in package.json
           file="$PACKAGE_JSON"
